@@ -1,7 +1,10 @@
 /* Earth Online - WarmRice (暖米白) */
 
-/* ── Light Theme ── */
-:root, body {
+.theme-light {
+  color-scheme: light;
+}
+
+body {
   /* Background */
   --background-primary: #faf8f5;
   --background-primary-alt: #f5f2ee;
@@ -163,7 +166,16 @@
 
 .markdown-rendered hr { border-color: var(--background-modifier-border); }
 
-/* ── Hover Popover: ULTIMATE FIX ── */
+/* ── Tooltip (file hover) ── */
+.tooltip {
+  background: #faf8f5 !important;
+  color: #3a3a3a !important;
+  border: 1px solid #e8e3dd !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* ── Hover Popover (page preview) ── */
 .hover-popover {
   background: #faf8f5 !important;
   border: 1px solid #e8e3dd !important;
