@@ -1,6 +1,10 @@
 /* Earth Online - MonoGray (极简灰白) */
 
-:root, body {
+.theme-light {
+  color-scheme: light;
+}
+
+body {
   /* Background */
   --background-primary: #f9f9f9;
   --background-primary-alt: #f2f2f2;
@@ -156,7 +160,16 @@
 
 .markdown-rendered hr { border-color: var(--background-modifier-border); }
 
-/* ── Hover Popover: ULTIMATE FIX ── */
+/* ── Tooltip (file hover) ── */
+.tooltip {
+  background: #f9f9f9 !important;
+  color: #1a1a1a !important;
+  border: 1px solid #eeeeee !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+
+/* ── Hover Popover (page preview) ── */
 .hover-popover {
   background: #f9f9f9 !important;
   border: 1px solid #eeeeee !important;
