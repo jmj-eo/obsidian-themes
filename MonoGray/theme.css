@@ -156,35 +156,51 @@
 
 .markdown-rendered hr { border-color: var(--background-modifier-border); }
 
-/* ── Page Preview (popover content) ── */
-.markdown-preview-view,
-.markdown-source-view,
-.hover-popover .markdown-preview-view,
-.popover .markdown-preview-view,
-.page-preview .markdown-preview-view {
-  color: #1a1a1a !important;
-}
-.markdown-preview-view .inline-title,
-.hover-popover .inline-title {
-  color: #1a1a1a !important;
-}
-
-/* ── Hover Popover & Tooltip ── */
-.hover-popover,
-body > .popover,
-.tooltip,
-.popover {
+/* ── Hover Popover: ULTIMATE FIX ── */
+.hover-popover {
   background: #f9f9f9 !important;
   border: 1px solid #eeeeee !important;
   border-radius: 8px !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
+  --text-normal: #1a1a1a;
+  --text-muted: #888888;
+  --text-faint: #bbbbbb;
+  --text-accent: #333333;
+  --background-primary: #f9f9f9;
+  --background-secondary: #f2f2f2;
 }
-/* 暴力：弹窗内所有文字强制深色 */
-.hover-popover :is(div,span,p,h1,h2,h3,h4,h5,h6,a,li,td,th,strong,em,code,pre,small,label),
-body > .popover :is(div,span,p,h1,h2,h3,h4,h5,h6,a,li,td,th,strong,em,code,pre,small,label),
-.tooltip :is(div,span,p,h1,h2,h3,h4,h5,h6,a,li,td,th,strong,em,code,pre,small,label),
-.popover :is(div,span,p,h1,h2,h3,h4,h5,h6,a,li,td,th,strong,em,code,pre,small,label),
-body > div > .hover-popover *,
-body > .popover * {
+.hover-popover,
+.hover-popover .markdown-preview-view,
+.hover-popover .markdown-preview-view *,
+.hover-popover .markdown-embed,
+.hover-popover .markdown-embed *,
+.hover-popover .internal-embed,
+.hover-popover .internal-embed *,
+.hover-popover .inline-title,
+.hover-popover .markdown-embed-title,
+.hover-popover .embed-title,
+.hover-popover .markdown-preview-section,
+.hover-popover .markdown-preview-sizer,
+.hover-popover .markdown-rendered,
+.hover-popover .markdown-rendered *,
+.hover-popover div,
+.hover-popover span,
+.hover-popover p,
+.hover-popover h1,
+.hover-popover h2,
+.hover-popover h3,
+.hover-popover h4,
+.hover-popover h5,
+.hover-popover h6,
+.hover-popover a,
+.hover-popover li,
+.hover-popover td,
+.hover-popover th,
+.hover-popover strong,
+.hover-popover em,
+.hover-popover code,
+.hover-popover pre,
+.hover-popover small,
+.hover-popover label {
   color: #1a1a1a !important;
 }
